@@ -1,3 +1,54 @@
 
+
+#
+#
+# Put relevant git information into your prompt - this will make your life easier. 
+# Here's a bash snippet for adding the current git branch to your prompt
+#
+
+function parse_git_branch {
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
+}
+PS1="\[\e[32m\]\$(parse_git_branch)\[\e[34m\]\h:\W \$ \[\e[m\]"
+export PS1
+
+#
+#
+
+alias git='hub'
+
+# show status
+alias g='git status -sb'
+
+# show history 
+alias gh='git hist'
+
+# pull
+alias gp='git pull'
+
+
+# fetch
+alias gf='git fetch'
+
+# branch
+alias gb='git branch'
+
+# commits
+alias ga='git add'
+alias gc='git commit'
+
+
+# diff 
+alias gd='git diff --color-words'
+alias gdc='git diff --cached -w'
+alias gdw='git diff --no-ext-diff --word-diff'
+alias gdv='git diff'
+
 # code review with external tool
 alias gcodrev='git difftool -y'
+alias gcr='git difftool -y'
+
+# logs
+alias gl='git log --oneline --decorate'
+alias gt='git tag'
+
