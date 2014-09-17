@@ -7,4 +7,4 @@ Setup
 =======
 Use aliases by running this command
 
-'wget -O - https://raw.githubusercontent.com/readybytes/aliases/master/import.sh | bash'
+`wget -O - https://raw.githubusercontent.com/readybytes/aliases/master/import.sh | bash`
