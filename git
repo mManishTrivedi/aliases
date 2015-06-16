@@ -15,10 +15,11 @@ export PS1
 #
 #
 
-alias git='hub'
+# alias git='hub'
 
 # show status
 alias g='git status -sb'
+alias st=g
 
 # show history 
 alias gh='git hist'

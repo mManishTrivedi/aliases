@@ -5,9 +5,10 @@ cd  /tmp/alias
 
 echo " 2. Downloading aliases "
 # download & unzip if not exist
-[ -f master.zip ] || ( wget https://github.com/readybytes/aliases/archive/master.zip && unzip master.zip )
+[ -f master.zip ] || ( wget https://github.com/mManishTrivedi/aliases/archive/master.zip && unzip master.zip )
 
-#source it
+#source it (Include file according to your requirement)
 echo " 3. Applying aliases "
 source /tmp/alias/aliases-master/bash
 source /tmp/alias/aliases-master/git
+#source /tmp/alias/aliases-master/rbsl
